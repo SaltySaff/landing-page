@@ -1,27 +1,111 @@
 body {
   display: flex;
+  flex-direction: column;
+  font-family:'Roboto', sans-serif;
 }
 
 .top-container {
   display: flex;
-  flex-shrink: 1;
-  justify-content: center;
   flex-direction: column;
-  font-family:'Roboto', sans-serif;
   background-color: #1F2937;
   color: white;
-  flex: 1 1 1000px;
-  padding: 0 150px 50px 150px;
+  flex-grow: 1;
+  padding: 0 150px 100px 150px;
+}
+
+.middle-container {
+  padding: 75px 0 75px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-middle-container {
+  padding: 100px 300px 75px 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E5E7EB;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-container {
+  padding: 150px 0 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  font-size: 18px;
+  padding: 30px 0 30px 0;
+  display: flex;
+  background-color: #1F2937;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  padding: 30px 100px 30px 100px;
+  display: flex;
+  width: 700px;
+  background-color: #3882F6;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.banner-button button {
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.banner-header {
+  margin-bottom: 0;
+}
+
+.banner-description {
+  margin-top: 0;
+}
+
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1F2937;
+  text-align: left;
+  align-self: flex-start;
+  width: 670px;
+}
+
+.tag {
+  display: flex;
+  flex: 1;
+  align-self: flex-end;
+  text-align: right;
+  font-size: 20px;
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 75px;
+  gap: 320px;
 }
 
 h1 {
+  font-size: 48px;;
   margin-bottom: 0px;
   margin-top: 0px;
   padding-bottom: 0px;
@@ -29,10 +113,17 @@ h1 {
   width: 300px;
 }
 
+.logo {
+  flex-shrink: 0;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
 
 h2 {
-  font-size: 24px;
-  color: #F9FAF8;
+  font-size: 36px;
+  font-weight: bold;
+  color: black
 }
 
  a {
@@ -42,6 +133,7 @@ h2 {
 
 .header-links {
   display: flex;
+  flex-shrink: 0;
   list-style: none;
   gap: 20px;
   padding: 0px;
@@ -49,9 +141,10 @@ h2 {
 }
 
 .top-content {
+  align-self: center;
   display: flex;
   justify-content: space-between;
-  gap: 5px;
+  gap: 20px;
 }
 
 .top-content.left {
@@ -78,10 +171,36 @@ button {
 }
 
 .image-placeholder {
-  width: 500px;
-  height: 100%;
+  width: 450px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: gray
+}
+
+.squares {
+  display: flex;
+  gap: 50px;
+  flex-shrink: 0;
+}
+
+.squares-text {
+  display: flex;
+  text-align: center;
+  flex-shrink: 0;
+  gap: 50px;
+}
+
+.square-text {
+  width: 150px;
+  color: gray;
+}
+
+.square {
+  border-style: solid;
+  border-color: #3882F6;
+  border-radius: 4px;
+  height: 150px;
+  width: 150px;
 }
